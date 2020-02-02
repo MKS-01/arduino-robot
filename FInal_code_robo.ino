@@ -1,14 +1,10 @@
-
-
-
-
 #include <AFMotor.h> //import your motor shield library
 #define trigPin A5 // define the pins of your sensor
 #define echoPin A4
 AF_DCMotor motor1(1,MOTOR12_64KHZ); // set up motors.
 AF_DCMotor motor2(2, MOTOR12_64KHZ);
 
- int sensorPin = A0; //input pin for ldr
+int sensorPin = A0; //input pin for ldr
 const int LED = 13;
 int ldrValue; //variable to store the value coming from the ldr
 
@@ -54,12 +50,6 @@ Serial.println (" Turning !");
    motor1.run(FORWARD); //if there's no obstacle ahead, Go Forward! 
     motor2.run(FORWARD);  
   }  
-  
-  
-
-  
-  
-  
  
 }
 
